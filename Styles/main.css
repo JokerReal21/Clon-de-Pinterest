@@ -3,9 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    display: inline;
+}
 #content{
-    width: 1440px;
-    margin: 20px;
-    display: grid;
-    gap: 40px;
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    columns: 5;
+    gap: 20px;
+}
+#content .card-image {
+    display: inline-block;
+    width:100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+#content .card-image img{
+    max-width: 100%;
+    border-radius: 15px;
+}
+@media screen and (max-width:1024px) {
+    #content{
+        width: calc(100% - 40px);
+        margin: 20px;
+        columns: 4;
+        gap: 30px;
+    }
+}
+@media screen and (max-width:768px) {
+    #content{
+        width: calc(100% - 40px);
+        margin: 20px;
+        columns: 3;
+        gap: 30px;
+    }
+}
+@media screen and (max-width:425px) {
+    #content{
+        width: calc(100% - 40px);
+        margin: 20px;
+        columns: 2;
+        gap: 20px;
+    }
 }
