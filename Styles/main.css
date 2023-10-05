@@ -24,6 +24,9 @@ nav{
 main{
     padding-top: 80px;
 }
+.btn-icon:hover{
+cursor: pointer;
+}
 .home-style{
     display: flex;
     color: white;
