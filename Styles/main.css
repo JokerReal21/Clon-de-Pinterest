@@ -102,15 +102,49 @@ cursor: pointer;
     max-width: 100%;
     border-radius: 15px;
 }
-.overlay{
-    z-index: 2;
+img{
+    vertical-align: middle;
+}
+.card-image{
+    position: relative;
+}
+.card-overlay{
+    position: absolute;
+    left: 0;
+/*     right: 0; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 15px;
+    opacity: 100%;
+    background-color: #00000055;
+}
+.card-image:hover{
+    .card-overlay{
+        display: block;
+    }
+}
+.top-info{
+    color: white;
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-info{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.icon-over{
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
 }
 
-/* .card-over:hover{
-    opacity: 20%;
-    cursor: pointer;
-    position: relative;
-} */
 @media screen and (max-width:1024px) {
     #content{
         width: calc(100% - 40px);
