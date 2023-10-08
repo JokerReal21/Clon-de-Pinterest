@@ -21,6 +21,12 @@ nav{
     margin-right: 2rem;
     gap: 1.5rem;
 }
+.Lens{
+    display: none;
+}
+.nav-menu-arrow{
+    width: 20px;
+}
 main{
     padding-top: 80px;
 }
@@ -175,7 +181,14 @@ img{
         columns: 2;
         gap: 20px;
     }
+    nav{
+        gap: 13px;
+    }
     .group{
         display: none;
+    }
+    .Lens{
+        display: block;
+        width: 30px;
     }
 }
